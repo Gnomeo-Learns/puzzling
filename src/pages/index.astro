@@ -1,0 +1,202 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Puzzle Strats — Competitive Puzzle Playbook">
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">PUZZLE<span>STRATS</span></a>
+      <ul class="nav-links">
+        <li><a href="#team-strategies">Team Sizes</a></li>
+        <li><a href="#sorting">Sorting</a></li>
+        <li><a href="#universal-tips">Tips</a></li>
+        <li><a href="#practice">Practice</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="hero-badge">THE COMPETITIVE EDGE</div>
+    <h1>CRUSH THE <em>COMPETITION</em></h1>
+    <p class="hero-sub">
+      A tactical playbook for puzzle competitions — team strategies, sorting techniques, practice drills, and everything you need to dominate.
+    </p>
+  </header>
+
+  <main class="content-wrap">
+
+    <!-- TEAM SIZE STRATEGIES -->
+    <section id="team-strategies" class="section">
+      <div class="section-label">FORMATIONS</div>
+      <h2>TEAM SIZE STRATEGIES</h2>
+      <p>Each team size demands a fundamentally different approach. What works for a duo will slow a quad down — and vice versa.</p>
+
+      <div class="team-grid">
+        <div class="team-card" data-accent="orange">
+          <span class="card-count">01</span>
+          <h3>SOLO</h3>
+          <p>Build the border first, then sort by dominant color into 4–6 zones. Work one section at a time — scattered effort kills momentum. Keep every piece visible and loosely organized. If you're digging through a pile, you're bleeding seconds.</p>
+          <span class="card-tag">Key: Sequential focus</span>
+        </div>
+
+        <div class="team-card" data-accent="cyan">
+          <span class="card-count">02</span>
+          <h3>DUO</h3>
+          <p>Divide the puzzle by region — top/bottom or by major color zones. One person builds the border while the other sorts interior pieces. The golden rule: don't poach from each other's zones. Call out piece clusters to your partner instead of reaching across.</p>
+          <span class="card-tag">Key: Zone discipline</span>
+        </div>
+
+        <div class="team-card" data-accent="violet">
+          <span class="card-count">03</span>
+          <h3>TRIO</h3>
+          <p>Introduce the <strong>sorter/feeder</strong> role. Two people build while the third continuously sorts and hands off clusters to builders. A great feeder keeps builders in flow state instead of breaking concentration to hunt. Rotate the role to avoid fatigue.</p>
+          <span class="card-tag">Key: Dedicated feeder</span>
+        </div>
+
+        <div class="team-card" data-accent="yellow">
+          <span class="card-count">04</span>
+          <h3>QUAD</h3>
+          <p>The sweet spot. Assign quadrants after a strategy huddle — agree on landmarks and boundaries using the box image. Advanced move: one person floats early on (border + sort + seams) while three build quadrants, then shifts to wherever the bottleneck is.</p>
+          <span class="card-tag">Key: Huddle & float</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SORTING TECHNIQUES -->
+    <section id="sorting" class="section">
+      <div class="section-label">MECHANICS</div>
+      <h2>SORTING TECHNIQUES</h2>
+      <p>Sorting is the highest-leverage skill in competitive puzzling. Fast, accurate sorting is what separates a good team from a dominant one.</p>
+
+      <div class="technique-list">
+        <div class="technique-item">
+          <div class="technique-icon orange">🪣</div>
+          <div>
+            <h3>THE BUCKET METHOD</h3>
+            <p>Your foundation. Before anyone builds, do a rapid first-pass sort into 4–6 groups by dominant color. Speed matters more than precision — you're routing pieces to the right neighborhood, not placing them. Think rough <code>if/elif</code> routing, not exact matching.</p>
+          </div>
+        </div>
+
+        <div class="technique-item">
+          <div class="technique-icon cyan">🔬</div>
+          <div>
+            <h3>THE SUB-SORT</h3>
+            <p>Within each color bucket, group by texture or pattern detail. Sky pieces split into "solid blue," "blue with cloud wisps," and "blue with tree overlap." A great sub-sort means builders almost never have to hunt — pieces practically place themselves.</p>
+          </div>
+        </div>
+
+        <div class="technique-item">
+          <div class="technique-icon violet">📐</div>
+          <div>
+            <h3>EDGE SEGREGATION</h3>
+            <p>Happens simultaneously with the bucket sort. Every person doing the initial sort pulls edge pieces into a dedicated pile as they go. One pass, two jobs: color-route the piece AND check if it's an edge. This is surprisingly hard under pressure — practice it.</p>
+          </div>
+        </div>
+
+        <div class="technique-item">
+          <div class="technique-icon yellow">🧩</div>
+          <div>
+            <h3>KNOB & HOLE PROFILE</h3>
+            <p>Advanced technique for large monochrome sections where color won't help. Sort by connector shape — all four-knob pieces together, or two-knobs-opposite-sides together. This narrows your search space dramatically when every piece looks identical.</p>
+          </div>
+        </div>
+
+        <div class="technique-item">
+          <div class="technique-icon pink">🌅</div>
+          <div>
+            <h3>GRADIENT MAPPING</h3>
+            <p>The secret weapon for nature scenes and sunsets. Lay pieces in a rough gradient line from lightest to darkest, physically mirroring their puzzle position. Grab from the right spot along your line based on where you're building. Takes a minute to set up, saves many on the back end.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL TIPS -->
+    <section id="universal-tips" class="section">
+      <div class="section-label">FUNDAMENTALS</div>
+      <h2>UNIVERSAL TIPS</h2>
+      <p>These apply no matter your team size. Nail these basics and you'll outperform teams that only focus on speed.</p>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h3>🖼️ Study the Box</h3>
+          <p>Memorize subtle color gradients and small details. It lets you place pieces by recognition rather than trial-and-error — a massive time advantage.</p>
+        </div>
+
+        <div class="tip-card">
+          <h3>⏱️ The 15-Second Rule</h3>
+          <p>Hunting for one specific piece more than 15 seconds? Move on. Tunnel vision is the #1 time killer. The piece will reveal itself when you work an adjacent section.</p>
+        </div>
+
+        <div class="tip-card">
+          <h3>☀️ Pieces Face Up</h3>
+          <p>Keep all pieces picture-side-up. Sounds obvious, but under pressure people skip this step, and it devastates efficiency down the line.</p>
+        </div>
+
+        <div class="tip-card">
+          <h3>📏 Maximize Surface</h3>
+          <p>Use the biggest table you can get. Cramped workspace forces stacking and hiding pieces. Bring a separate sorting tray or mat if allowed.</p>
+        </div>
+
+        <div class="tip-card">
+          <h3>💡 Good Lighting</h3>
+          <p>A well-lit, non-glossy surface is a genuine competitive advantage. You're processing color and texture — bad lighting slows that processing constantly.</p>
+        </div>
+
+        <div class="tip-card">
+          <h3>🧠 Match the Format</h3>
+          <p>Practice with the same piece count and brand you'll face. 500-piece and 1000-piece puzzles require different strategies, and piece quality varies by manufacturer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE DRILLS -->
+    <section id="practice" class="section">
+      <div class="section-label">TRAINING</div>
+      <h2>PRACTICE DRILLS</h2>
+      <p>Raw speed comes from repetition, but smart drills accelerate your improvement curve dramatically.</p>
+
+      <div class="practice-list">
+        <div class="practice-item">
+          <h3>TIMED SORT DRILL</h3>
+          <p>Dump 500 pieces and practice only the bucket sort phase. Measure how fast your team gets pieces into clean groups. Your sort time will drop dramatically after a few sessions — this is the single highest-leverage team improvement.</p>
+        </div>
+
+        <div class="practice-item">
+          <h3>BLIND QUADRANT</h3>
+          <p>Each person builds their section without the box image for five minutes, relying only on shape and color. Then reveal the image. This trains tactile and pattern recognition so you process pieces through multiple channels simultaneously.</p>
+        </div>
+
+        <div class="practice-item">
+          <h3>HANDOFF TIMING</h3>
+          <p>Have your sorter feed pieces to builders and time how long it takes to place a fed piece vs. a self-found piece. This calibrates whether your sorter is grouping tightly enough and builds builder trust in the feed.</p>
+        </div>
+
+        <div class="practice-item">
+          <h3>STRESS PUZZLES</h3>
+          <p>Set a timer 20% shorter than you need. Play loud music. Use your non-dominant hand for a round. Competition adrenaline degrades fine motor skills and communication — training under mild stress inoculates you against that.</p>
+        </div>
+
+        <div class="practice-item">
+          <h3>POST-PUZZLE RETRO</h3>
+          <p>After each session, spend five minutes talking through where bottlenecks happened. Was the sky the chokepoint? Did the sorter get overwhelmed? These quick debriefs surface process problems you'd otherwise never notice.</p>
+        </div>
+
+        <div class="practice-item">
+          <h3>BUILD SHARED VOCABULARY</h3>
+          <p>Agree on shorthand — "feeder piece" for a piece someone passes, "orphan" for a piece without a home, "bridge" for a quadrant seam. Common language shaves seconds off every communication, and those seconds stack.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for the iron-fisted puzzle competitor. Go crush it. 🧩</p>
+  </footer>
+
+</Layout>
